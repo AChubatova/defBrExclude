@@ -93,6 +93,10 @@ object Vctrig : BuildType({
 
     vcs {
         root(HttpsGithubComAChubatovaComposite, "+:fold => fold")
+        branchFilter = """
+            +:*
+            -:<default>
+        """.trimIndent()
     }
 
     steps {
