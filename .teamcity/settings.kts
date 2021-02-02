@@ -1,5 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.powerShell
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
@@ -41,11 +41,14 @@ object FilterOutDefaultBranch : BuildType({
     }
 
     steps {
-        script {
-            scriptContent = """
-                echo hi
-                sleep 100
-            """.trimIndent()
+        powerShell {
+            scriptMode = file {
+                path = "part4.ps1"
+            }
+            param("jetbrains_powershell_script_code", """
+                Write-output "HI"
+                Start-Sleep seconds 1
+            """.trimIndent())
         }
     }
 })
