@@ -38,7 +38,10 @@ object FilterOutDefaultBranch : BuildType({
 
     vcs {
         root(Comp)
-        branchFilter = "+:*"
+         branchFilter = """
+            +:*
+            -:<default>
+        """.trimIndent()
     }
 
     steps {
