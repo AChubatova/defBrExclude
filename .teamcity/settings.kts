@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
@@ -37,6 +38,15 @@ object FilterOutDefaultBranch : BuildType({
 
     vcs {
         root(Comp)
+    }
+
+    steps {
+        script {
+            scriptContent = """
+                echo hi
+                sleep 100
+            """.trimIndent()
+        }
     }
 })
 
