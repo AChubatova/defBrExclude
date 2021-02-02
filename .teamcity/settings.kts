@@ -1,8 +1,4 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.commitStatusPublisher
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.script
-import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.schedule
-import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 
 /*
@@ -31,106 +27,25 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(HttpsGithubComAChubatovaComposite)
+    vcsRoot(Comp)
 
-    buildType(Vctrig)
-    buildType(FilterDefBranch)
-    buildType(Trig2)
-    buildType(Build3)
+    buildType(FilterOutDefaultBranch)
 }
 
-object Build3 : BuildType({
-    name = "build3"
+object FilterOutDefaultBranch : BuildType({
+    name = "FilterOutDefaultBranch"
 
     vcs {
-        root(HttpsGithubComAChubatovaComposite)
-    }
-
-    steps {
-        script {
-            scriptContent = "ls"
-        }
+        root(Comp)
     }
 })
 
-object FilterDefBranch : BuildType({
-    name = "filterDefBranch"
-})
-
-object Trig2 : BuildType({
-    name = "trig2"
-
-    vcs {
-        root(HttpsGithubComAChubatovaComposite, "+:100files => 100files")
-
-        branchFilter = """
-            +:*
-            +:changes/*
-        """.trimIndent()
-    }
-
-    steps {
-        script {
-            scriptContent = "ls"
-        }
-    }
-
-    triggers {
-        schedule {
-            triggerBuild = onWatchedBuildChange {
-                buildType = "${Trig2.id}"
-            }
-        }
-    }
-})
-
-object Vctrig : BuildType({
-    name = "vctrig"
-
-    params {
-        param("teamcity.vcsTrigger.analyzeFullHistoryForMergeCommits", "false")
-    }
-
-    vcs {
-        root(HttpsGithubComAChubatovaComposite, "+:fold => fold")
-        branchFilter = """
-            +:*
-            -:<default>
-        """.trimIndent()
-    }
-
-    steps {
-        script {
-            scriptContent = "ls"
-        }
-    }
-
-    triggers {
-        vcs {
-            triggerRules = "+:/fold/**"
-            branchFilter = """
-                +:changes/*
-                +:*
-            """.trimIndent()
-        }
-    }
-
-    features {
-        commitStatusPublisher {
-            vcsRootExtId = "${HttpsGithubComAChubatovaComposite.id}"
-            publisher = github {
-                githubUrl = "https://api.github.com"
-                authType = personalToken {
-                    token = "credentialsJSON:0a7113b2-814d-4293-90a9-ee62744d71bd"
-                }
-            }
-        }
-    }
-})
-
-object HttpsGithubComAChubatovaComposite : GitVcsRoot({
-    name = "https://github.com/AChubatova/composite"
+object Comp : GitVcsRoot({
+    name = "comp"
     url = "https://github.com/AChubatova/composite"
     branch = "refs/heads/master"
-    branchSpec = "+:refs/heads/*"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
+    }
 })
