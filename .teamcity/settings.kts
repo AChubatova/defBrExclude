@@ -42,6 +42,7 @@ object FilterOutDefaultBranch : BuildType({
             +:*
             -:<default>
             -:brch
+            -:branch2
         """.trimIndent()
     }
 
