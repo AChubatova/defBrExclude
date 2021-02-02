@@ -33,7 +33,7 @@ project {
 }
 
 object FilterOutDefaultBranch : BuildType({
-    name = "FilterOutDefaultBranch"
+    name = "FilterOutDefaultBranch2"
 
     vcs {
         root(Comp)
