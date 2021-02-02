@@ -62,6 +62,11 @@ object Trig2 : BuildType({
 
     vcs {
         root(HttpsGithubComAChubatovaComposite, "+:100files => 100files")
+
+        branchFilter = """
+            +:*
+            +:changes/*
+        """.trimIndent()
     }
 
     steps {
