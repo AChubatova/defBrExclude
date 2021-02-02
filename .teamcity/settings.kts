@@ -54,6 +54,7 @@ object Comp : GitVcsRoot({
     name = "comp"
     url = "https://github.com/AChubatova/composite"
     branch = "refs/heads/master"
+    branchSpec = "+:*"
     authMethod = password {
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
