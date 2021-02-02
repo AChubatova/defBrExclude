@@ -99,7 +99,10 @@ object Vctrig : BuildType({
     triggers {
         vcs {
             triggerRules = "+:/fold/**"
-            branchFilter = "+:changes/*"
+            branchFilter = """
+                +:changes/*
+                +:*
+            """.trimIndent()
         }
     }
 
