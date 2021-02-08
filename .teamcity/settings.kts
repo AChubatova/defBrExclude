@@ -29,6 +29,7 @@ version = "2020.2"
 
 project {
 
+    vcsRoot(Flower)
     vcsRoot(Monkey)
     vcsRoot(Lion)
     vcsRoot(Comp)
@@ -91,6 +92,13 @@ object Comp : GitVcsRoot({
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
     }
+})
+
+object Flower : SvnVcsRoot({
+    name = "flower"
+    url = "https://flower.com"
+    userName = "abc"
+    password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
 })
 
 object Lion : SvnVcsRoot({
