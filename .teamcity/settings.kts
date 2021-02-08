@@ -32,6 +32,7 @@ project {
     vcsRoot(Dfdf)
     vcsRoot(Ddfdf)
     vcsRoot(Pirat)
+    vcsRoot(Razboinik)
     vcsRoot(Comp)
     vcsRoot(Tiger)
     vcsRoot(Sdkj)
@@ -110,6 +111,16 @@ object Pirat : GitVcsRoot({
     authMethod = password {
         userName = "AChubatova"
         password = "credentialsJSON:60f03ea7-2594-45c5-8193-b9c4f78ac375"
+    }
+})
+
+object Razboinik : GitVcsRoot({
+    name = "razboinik"
+    url = "https://razboinik.com"
+    branch = "refs/heads/masdter"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:5c9db2ae-5da2-4d46-8056-58a1bc6f3541"
     }
 })
 
