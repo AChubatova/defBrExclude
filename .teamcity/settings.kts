@@ -1,7 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.powerShell
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
-import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -32,8 +31,6 @@ project {
     vcsRoot(Tigernotalone)
     vcsRoot(Comp)
     vcsRoot(Tiger)
-    vcsRoot(Sdkj)
-    vcsRoot(Sdsd)
 
     buildType(FilterOutDefaultBranch)
 
@@ -84,23 +81,6 @@ object Comp : GitVcsRoot({
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
     }
-})
-
-object Sdkj : GitVcsRoot({
-    name = "sdkj"
-    url = "sdaslkdj"
-    branch = "refs/heads/master"
-    authMethod = password {
-        userName = "fgfg"
-        password = "credentialsJSON:13f5e742-4fc6-4e48-9416-d9974bae1ed5"
-    }
-})
-
-object Sdsd : SvnVcsRoot({
-    name = "sdsd"
-    url = "https://sdklsk.clksd.com"
-    userName = "dfd"
-    password = "credentialsJSON:6ffea745-b7e2-4a7d-8cd8-85f00070bb19"
 })
 
 object Tiger : GitVcsRoot({
