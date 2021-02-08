@@ -109,7 +109,7 @@ object Pirat : GitVcsRoot({
     branch = "refs/heads/master"
     authMethod = password {
         userName = "AChubatova"
-        password = "credentialsJSON:8a98e9a0-77c9-4119-9617-2c2bd77f6650"
+        password = "credentialsJSON:60f03ea7-2594-45c5-8193-b9c4f78ac375"
     }
 })
 
