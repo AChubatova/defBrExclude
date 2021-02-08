@@ -29,6 +29,7 @@ version = "2020.2"
 
 project {
 
+    vcsRoot(Lion)
     vcsRoot(Comp)
     vcsRoot(Babushka)
 
@@ -89,4 +90,11 @@ object Comp : GitVcsRoot({
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
     }
+})
+
+object Lion : SvnVcsRoot({
+    name = "lion"
+    url = "https://sdkj.dl"
+    userName = "abc"
+    password = "credentialsJSON:28de07af-572f-42bd-bad6-08a0618cd8f2"
 })
