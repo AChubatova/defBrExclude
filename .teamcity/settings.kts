@@ -29,7 +29,6 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Dfdf)
     vcsRoot(Tigernotalone)
     vcsRoot(Pirat)
     vcsRoot(Razboinik)
@@ -87,13 +86,6 @@ object Comp : GitVcsRoot({
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
     }
-})
-
-object Dfdf : SvnVcsRoot({
-    name = "dfdf"
-    url = "https://ddlfk.visualstudor.com"
-    userName = "a"
-    password = "credentialsJSON:259ff54f-0444-4496-b247-71dc84c51dfb"
 })
 
 object Pirat : GitVcsRoot({
