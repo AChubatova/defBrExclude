@@ -73,7 +73,7 @@ object Babushka : SvnVcsRoot({
     name = "babushka"
     url = "https://sdkj.clk"
     userName = "asdasd"
-    password = "credentialsJSON:82a1b6ab-e142-4c95-9010-32cbfb197cc2"
+    password = "credentialsJSON:e22c8261-bed4-4d43-bca1-9835145c15c4"
     passphrase = "credentialsJSON:dd2c9df4-659b-44de-873c-bf0ddd8b1653"
 })
 
