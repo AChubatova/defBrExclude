@@ -20,6 +20,15 @@
           <param name="vcsRootId" value="PullRequest_Compositepull" />
         </parameters>
       </extension>
+      <extension id="BUILD_EXT_2" type="pullRequests">
+        <parameters>
+          <param name="authenticationType" value="token" />
+          <param name="filterAuthorRole" value="MEMBER" />
+          <param name="providerType" value="github" />
+          <param name="secure:accessToken" value="credentialsJSON:f334b193-a70d-42c1-9b59-2a5c6bf5ff56" />
+          <param name="vcsRootId" value="PullRequest_Compositepull" />
+        </parameters>
+      </extension>
     </build-extensions>
     <cleanup />
   </settings>
