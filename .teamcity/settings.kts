@@ -28,9 +28,7 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Tigernotalone)
     vcsRoot(Comp)
-    vcsRoot(Tiger)
 
     buildType(FilterOutDefaultBranch)
 
@@ -80,25 +78,5 @@ object Comp : GitVcsRoot({
     authMethod = password {
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
-    }
-})
-
-object Tiger : GitVcsRoot({
-    name = "tiger"
-    url = "https://tiger.com"
-    branch = "refs/heads/master"
-    authMethod = password {
-        userName = "AChubatova"
-        password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
-    }
-})
-
-object Tigernotalone : GitVcsRoot({
-    name = "tigernotalone"
-    url = "https://sjshd.dfkj"
-    branch = "sdfdf"
-    authMethod = password {
-        userName = "AChubatova"
-        password = "credentialsJSON:b89ad2ad-a8f4-4805-8830-5b02af5eb261"
     }
 })
