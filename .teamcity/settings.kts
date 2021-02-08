@@ -1,6 +1,7 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.powerShell
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -29,6 +30,7 @@ version = "2020.2"
 project {
 
     vcsRoot(Comp)
+    vcsRoot(Babushka)
 
     buildType(FilterOutDefaultBranch)
 
@@ -65,6 +67,14 @@ object FilterOutDefaultBranch : BuildType({
             """.trimIndent())
         }
     }
+})
+
+object Babushka : SvnVcsRoot({
+    name = "babushka"
+    url = "https://sdkj.clk"
+    userName = "asdasd"
+    password = "credentialsJSON:82a1b6ab-e142-4c95-9010-32cbfb197cc2"
+    passphrase = "credentialsJSON:dd2c9df4-659b-44de-873c-bf0ddd8b1653"
 })
 
 object Comp : GitVcsRoot({
