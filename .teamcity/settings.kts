@@ -29,6 +29,7 @@ version = "2020.2"
 
 project {
 
+    vcsRoot(Monkey)
     vcsRoot(Lion)
     vcsRoot(Comp)
     vcsRoot(Babushka)
@@ -96,5 +97,11 @@ object Lion : SvnVcsRoot({
     name = "lion"
     url = "https://sdkj.dl"
     userName = "abc"
+    password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object Monkey : SvnVcsRoot({
+    name = "monkey"
+    url = "https://skdj.bm"
     password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
 })
