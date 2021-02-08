@@ -96,5 +96,5 @@ object Lion : SvnVcsRoot({
     name = "lion"
     url = "https://sdkj.dl"
     userName = "abc"
-    password = "credentialsJSON:157d35eb-fe94-482b-8b3d-2129522a5f73"
+    password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
 })
