@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <name>GitCheckoutRules Config DSL Script</name>
-  <groupId>GitCheckoutRules</groupId>
-  <artifactId>GitCheckoutRules_dsl</artifactId>
+  <name>PullRequest Config DSL Script</name>
+  <groupId>PullRequest</groupId>
+  <artifactId>PullRequest_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <parent>
