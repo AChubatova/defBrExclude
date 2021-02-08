@@ -26,7 +26,7 @@
           <param name="filterAuthorRole" value="MEMBER" />
           <param name="providerType" value="github" />
           <param name="secure:accessToken" value="credentialsJSON:8ca59394-44df-4486-b34a-4e9c955a98ff" />
-          <param name="vcsRootId" value="Pullrequest_Sdsdbefore" />
+          <param name="vcsRootId" value="Pullrequest_Sdsdafter" />
         </parameters>
       </extension>
     </build-extensions>
