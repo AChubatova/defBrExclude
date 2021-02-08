@@ -31,7 +31,6 @@ project {
 
     vcsRoot(Dfdf)
     vcsRoot(Tigernotalone)
-    vcsRoot(Ddfdf)
     vcsRoot(Pirat)
     vcsRoot(Razboinik)
     vcsRoot(Comp)
@@ -87,16 +86,6 @@ object Comp : GitVcsRoot({
     authMethod = password {
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
-    }
-})
-
-object Ddfdf : GitVcsRoot({
-    name = "ddfdf"
-    url = "https://github.com/asdkjkj"
-    branch = "refs/heads/master"
-    authMethod = password {
-        userName = "skj"
-        password = "credentialsJSON:8d007738-1378-447d-8916-44c748a10df1"
     }
 })
 
