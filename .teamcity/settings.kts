@@ -141,7 +141,7 @@ object Sdsd : SvnVcsRoot({
     name = "sdsd"
     url = "https://sdklsk.clksd.com"
     userName = "dfd"
-    password = "credentialsJSON:dfcdab12-3c85-4bc7-ad79-6e914e0f7790"
+    password = "credentialsJSON:6ffea745-b7e2-4a7d-8cd8-85f00070bb19"
 })
 
 object Tiger : GitVcsRoot({
