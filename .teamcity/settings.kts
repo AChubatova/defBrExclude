@@ -33,6 +33,7 @@ project {
     vcsRoot(Monkey)
     vcsRoot(Lion)
     vcsRoot(Comp)
+    vcsRoot(Xcxc)
     vcsRoot(Babushka)
 
     buildType(FilterOutDefaultBranch)
@@ -112,4 +113,14 @@ object Monkey : SvnVcsRoot({
     name = "monkey"
     url = "https://skdj.bm"
     password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object Xcxc : GitVcsRoot({
+    name = "xcxc"
+    url = "https://gihub.com"
+    branch = "refs/heads/master"
+    authMethod = password {
+        userName = "achubatova"
+        password = "credentialsJSON:82318fd5-6a50-409a-96a8-9cd360ddca82"
+    }
 })
