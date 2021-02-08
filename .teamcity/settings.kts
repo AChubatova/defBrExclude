@@ -31,6 +31,7 @@ project {
 
     vcsRoot(Dfdf)
     vcsRoot(Ddfdf)
+    vcsRoot(Pirat)
     vcsRoot(Comp)
     vcsRoot(Tiger)
     vcsRoot(Sdkj)
@@ -100,6 +101,16 @@ object Dfdf : SvnVcsRoot({
     url = "https://ddlfk.visualstudor.com"
     userName = "a"
     password = "credentialsJSON:259ff54f-0444-4496-b247-71dc84c51dfb"
+})
+
+object Pirat : GitVcsRoot({
+    name = "pirat"
+    url = "https://pirat.com"
+    branch = "refs/heads/master"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:8a98e9a0-77c9-4119-9617-2c2bd77f6650"
+    }
 })
 
 object Sdkj : GitVcsRoot({
