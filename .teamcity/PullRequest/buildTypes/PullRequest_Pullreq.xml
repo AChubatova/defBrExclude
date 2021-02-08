@@ -6,7 +6,7 @@
     <parameters />
     <build-runners />
     <vcs-settings>
-      <vcs-entry-ref root-id="PullRequest_Compositepu" />
+      <vcs-entry-ref root-id="PullRequest_Compositep" />
     </vcs-settings>
     <requirements />
     <build-triggers />
@@ -17,7 +17,7 @@
           <param name="github_host" value="https://api.github.com" />
           <param name="publisherId" value="githubStatusPublisher" />
           <param name="secure:github_access_token" value="credentialsJSON:f334b193-a70d-42c1-9b59-2a5c6bf5ff56" />
-          <param name="vcsRootId" value="PullRequest_Compositepu" />
+          <param name="vcsRootId" value="PullRequest_Compositep" />
         </parameters>
       </extension>
       <extension id="BUILD_EXT_2" type="pullRequests">
