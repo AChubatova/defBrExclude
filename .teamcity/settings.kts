@@ -30,8 +30,6 @@ version = "2020.2"
 project {
 
     vcsRoot(Tigernotalone)
-    vcsRoot(Pirat)
-    vcsRoot(Razboinik)
     vcsRoot(Comp)
     vcsRoot(Tiger)
     vcsRoot(Sdkj)
@@ -85,26 +83,6 @@ object Comp : GitVcsRoot({
     authMethod = password {
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
-    }
-})
-
-object Pirat : GitVcsRoot({
-    name = "pirat"
-    url = "https://pirat.com"
-    branch = "refs/heads/master"
-    authMethod = password {
-        userName = "AChubatova"
-        password = "credentialsJSON:60f03ea7-2594-45c5-8193-b9c4f78ac375"
-    }
-})
-
-object Razboinik : GitVcsRoot({
-    name = "razboinik"
-    url = "https://razboinik.com"
-    branch = "refs/heads/masdter"
-    authMethod = password {
-        userName = "AChubatova"
-        password = "credentialsJSON:91748f86-5c7c-4eb8-a49e-84d7903718c2"
     }
 })
 
