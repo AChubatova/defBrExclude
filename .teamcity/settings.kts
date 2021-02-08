@@ -37,6 +37,10 @@ project {
     vcsRoot(Sdsd)
 
     buildType(FilterOutDefaultBranch)
+
+    params {
+        param("pwd", "pwdpwdpwdp")
+    }
 }
 
 object FilterOutDefaultBranch : BuildType({
