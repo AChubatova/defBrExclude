@@ -32,6 +32,7 @@ project {
     vcsRoot(Dfdf)
     vcsRoot(Ddfdf)
     vcsRoot(Comp)
+    vcsRoot(Sdsd)
 
     buildType(FilterOutDefaultBranch)
 }
@@ -92,4 +93,11 @@ object Dfdf : SvnVcsRoot({
     url = "https://ddlfk.visualstudor.com"
     userName = "a"
     password = "credentialsJSON:259ff54f-0444-4496-b247-71dc84c51dfb"
+})
+
+object Sdsd : SvnVcsRoot({
+    name = "sdsd"
+    url = "https://sdklsk.clksd.com"
+    userName = "dfd"
+    password = "credentialsJSON:dfcdab12-3c85-4bc7-ad79-6e914e0f7790"
 })
