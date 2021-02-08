@@ -30,6 +30,7 @@ version = "2020.2"
 project {
 
     vcsRoot(Dfdf)
+    vcsRoot(Tigernotalone)
     vcsRoot(Ddfdf)
     vcsRoot(Pirat)
     vcsRoot(Razboinik)
@@ -149,5 +150,15 @@ object Tiger : GitVcsRoot({
     authMethod = password {
         userName = "AChubatova"
         password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
+    }
+})
+
+object Tigernotalone : GitVcsRoot({
+    name = "tigernotalone"
+    url = "https://sjshd.dfkj"
+    branch = "sdfdf"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:b89ad2ad-a8f4-4805-8830-5b02af5eb261"
     }
 })
