@@ -120,7 +120,7 @@ object Razboinik : GitVcsRoot({
     branch = "refs/heads/masdter"
     authMethod = password {
         userName = "AChubatova"
-        password = "credentialsJSON:5c9db2ae-5da2-4d46-8056-58a1bc6f3541"
+        password = "credentialsJSON:91748f86-5c7c-4eb8-a49e-84d7903718c2"
     }
 })
 
