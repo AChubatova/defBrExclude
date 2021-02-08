@@ -40,6 +40,7 @@ project {
 
     params {
         param("pwd", "pwdpwdpwdp")
+        password("pwd2", "credentialsJSON:72ae78b7-3767-45b9-a0d8-2ff5ed2bf1f8")
     }
 }
 
