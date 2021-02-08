@@ -6,7 +6,7 @@
     <parameters />
     <build-runners />
     <vcs-settings>
-      <vcs-entry-ref root-id="Pullrequest_Sdsdbefore" />
+      <vcs-entry-ref root-id="Pullrequest_Sdsdafter" />
     </vcs-settings>
     <requirements />
     <build-triggers />
@@ -17,7 +17,7 @@
           <param name="github_host" value="https://api.github.com" />
           <param name="publisherId" value="githubStatusPublisher" />
           <param name="secure:github_access_token" value="credentialsJSON:8ca59394-44df-4486-b34a-4e9c955a98ff" />
-          <param name="vcsRootId" value="Pullrequest_Sdsdbefore" />
+          <param name="vcsRootId" value="Pullrequest_Sdsdafter" />
         </parameters>
       </extension>
       <extension id="BUILD_EXT_2" type="pullRequests">
