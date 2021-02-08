@@ -32,6 +32,7 @@ project {
     vcsRoot(Dfdf)
     vcsRoot(Ddfdf)
     vcsRoot(Comp)
+    vcsRoot(Tiger)
     vcsRoot(Sdkj)
     vcsRoot(Sdsd)
 
@@ -111,4 +112,14 @@ object Sdsd : SvnVcsRoot({
     url = "https://sdklsk.clksd.com"
     userName = "dfd"
     password = "credentialsJSON:dfcdab12-3c85-4bc7-ad79-6e914e0f7790"
+})
+
+object Tiger : GitVcsRoot({
+    name = "tiger"
+    url = "https://tiger.com"
+    branch = "refs/heads/master"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
+    }
 })
