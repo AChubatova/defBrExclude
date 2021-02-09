@@ -83,4 +83,5 @@ object Sdsdafjjhkjh : GitVcsRoot({
     name = "sdsdbefore"
     url = "https://github.com/AChubatova/composite"
     branch = "+:refs/heads/master"
+    branchSpec = "+:refs/heads/(*)"
 })
