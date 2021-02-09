@@ -29,12 +29,20 @@ project {
 
     vcsRoot(Sdkjs)
     vcsRoot(Dfkj)
+    vcsRoot(SAlskd)
 }
 
 object Dfkj : SvnVcsRoot({
     name = "dfkjl"
     url = "https://github.com/AChubatova/defBrExclude"
     userName = "AChubatova"
+    password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
+})
+
+object SAlskd : SvnVcsRoot({
+    name = "s;alskd"
+    url = "https://sdkj.ck"
+    userName = "nastya"
     password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
 })
 
