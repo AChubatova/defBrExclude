@@ -71,5 +71,5 @@ object Pullreq : BuildType({
 object Sdsdafjjhkjh : GitVcsRoot({
     name = "sdsdbefore"
     url = "https://github.com/AChubatova/composite"
-    branchFilter = "+:refs/heads/branch2"
+    branch = "+:refs/heads/master"
 })
