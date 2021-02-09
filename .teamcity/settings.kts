@@ -39,10 +39,6 @@ project {
 
     buildType(Pullreq)
     buildType(BrFilter)
-
-    params {
-        param("a", "a")
-    }
 }
 
 object BrFilter : BuildType({
