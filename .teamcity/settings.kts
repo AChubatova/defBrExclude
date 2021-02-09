@@ -28,7 +28,6 @@ version = "2020.2"
 project {
 
     vcsRoot(Sdkjs)
-    vcsRoot(SAlskd)
 
     params {
         param("acc", "ac")
@@ -37,13 +36,6 @@ project {
         param("b", "b")
     }
 }
-
-object SAlskd : SvnVcsRoot({
-    name = "s;alskd"
-    url = "https://sdkj.ck"
-    userName = "nastya"
-    password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
-})
 
 object Sdkjs : SvnVcsRoot({
     name = "sdkj"
