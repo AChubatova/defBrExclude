@@ -32,6 +32,7 @@ project {
     vcsRoot(SAlskd)
 
     params {
+        param("acc", "ac")
         param("a", "a")
         param("b", "b")
         password("ac", "credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051")
