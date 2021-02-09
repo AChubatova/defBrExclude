@@ -29,6 +29,8 @@ project {
 
     vcsRoot(Dskfjlalskdj)
 
+    buildType(Gfhgf)
+
     params {
         param("acc", "ac")
         param("a", "a")
@@ -36,6 +38,10 @@ project {
         param("b", "b")
     }
 }
+
+object Gfhgf : BuildType({
+    name = "gfhgf"
+})
 
 object Dskfjlalskdj : SvnVcsRoot({
     name = "dskfjlalskdj"
