@@ -33,6 +33,7 @@ project {
 
     params {
         param("a", "a")
+        param("b", "b")
     }
 }
 
