@@ -4,6 +4,7 @@ import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.commitStatusPu
 import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.pullRequests
 import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -32,6 +33,7 @@ version = "2020.2"
 project {
 
     vcsRoot(Sdsdafjjhkjh)
+    vcsRoot(Nastya)
 
     buildType(Pullreq)
     buildType(BrFilter)
@@ -86,6 +88,13 @@ object Pullreq : BuildType({
             }
         }
     }
+})
+
+object Nastya : SvnVcsRoot({
+    name = "nastya"
+    url = "https://nastya.svn"
+    userName = "nastya"
+    password = "credentialsJSON:87c43ed5-e4c2-4d81-9d26-a956ead41c97"
 })
 
 object Sdsdafjjhkjh : GitVcsRoot({
