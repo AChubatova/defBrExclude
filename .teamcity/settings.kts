@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -25,4 +26,13 @@ To debug in IntelliJ Idea, open the 'Maven Projects' tool window (View
 version = "2020.2"
 
 project {
+
+    vcsRoot(Dfkj)
 }
+
+object Dfkj : SvnVcsRoot({
+    name = "dfkjl"
+    url = "https://github.com/AChubatova/defBrExclude"
+    userName = "AChubatova"
+    password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
+})
