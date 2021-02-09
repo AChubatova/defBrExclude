@@ -62,7 +62,7 @@ object Pullreq : BuildType({
         vcs {
             triggerRules = "+:root=${Sdsdafjjhkjh.id}:sedfjhk"
 
-            branchFilter = ""
+            branchFilter = "+:sdkj"
         }
     }
 
