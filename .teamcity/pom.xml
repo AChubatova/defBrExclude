@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <project>
   <modelVersion>4.0.0</modelVersion>
-  <name>Pullrequest Config DSL Script</name>
-  <groupId>Pullrequest</groupId>
-  <artifactId>Pullrequest_dsl</artifactId>
+  <name>Tokencheck Config DSL Script</name>
+  <groupId>Tokencheck</groupId>
+  <artifactId>Tokencheck_dsl</artifactId>
   <version>1.0-SNAPSHOT</version>
 
   <parent>

@@ -1,9 +1,4 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.PullRequests
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.commitStatusPublisher
-import jetbrains.buildServer.configs.kotlin.v2019_2.buildFeatures.pullRequests
-import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
-import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
@@ -32,102 +27,12 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(AslfkjLkjd)
-    vcsRoot(Dfdf)
-    vcsRoot(Sdsd)
-    vcsRoot(Dsd)
-    vcsRoot(Sdsdafjjhkjh)
-    vcsRoot(Nastya)
-
-    buildType(Pullreq)
-    buildType(BrFilter)
+    vcsRoot(Subv)
 }
 
-object BrFilter : BuildType({
-    name = "brFilter"
-
-    vcs {
-        root(Sdsdafjjhkjh)
-
-        branchFilter = "+:branch2"
-    }
-})
-
-object Pullreq : BuildType({
-    name = "pullreq"
-
-    vcs {
-        root(Sdsdafjjhkjh)
-    }
-
-    triggers {
-        vcs {
-            triggerRules = "+:root=${Sdsdafjjhkjh.id}:sedfjhk"
-
-            branchFilter = "+:sdkj"
-        }
-    }
-
-    features {
-        commitStatusPublisher {
-            vcsRootExtId = "${Sdsdafjjhkjh.id}"
-            publisher = github {
-                githubUrl = "https://api.github.com"
-                authType = personalToken {
-                    token = "credentialsJSON:8ca59394-44df-4486-b34a-4e9c955a98ff"
-                }
-            }
-        }
-        pullRequests {
-            vcsRootExtId = "Pullrequest_Sdsdafter"
-            provider = github {
-                authType = token {
-                    token = "credentialsJSON:8ca59394-44df-4486-b34a-4e9c955a98ff"
-                }
-                filterAuthorRole = PullRequests.GitHubRoleFilter.MEMBER
-            }
-        }
-    }
-})
-
-object AslfkjLkjd : SvnVcsRoot({
-    name = "aslfkj lkjd"
-    url = "https://sdkj.com"
-    userName = "nastya"
-    password = "credentialsJSON:be4f977e-779c-487f-9b56-260d2e17a03f"
-})
-
-object Dfdf : SvnVcsRoot({
-    name = "dfdf"
-    url = "https://dkj.sk"
-    userName = "nastya"
-    password = "credentialsJSON:87c43ed5-e4c2-4d81-9d26-a956ead41c97"
-})
-
-object Dsd : SvnVcsRoot({
-    name = "dsd"
-    url = "https://sldk.ck"
-    userName = "s;lakd"
-    password = "credentialsJSON:ca8e5252-ae2a-4b31-871a-895bc4581493"
-})
-
-object Nastya : SvnVcsRoot({
-    name = "nastya"
-    url = "https://nastya.svn"
-    userName = "nastya"
-    password = "credentialsJSON:87c43ed5-e4c2-4d81-9d26-a956ead41c97"
-})
-
-object Sdsd : SvnVcsRoot({
-    name = "sdsd"
-    url = "https://ldkl.com"
-    userName = "a"
-    password = "credentialsJSON:ffd17c46-c648-4764-b837-7b17fec9f99b"
-})
-
-object Sdsdafjjhkjh : GitVcsRoot({
-    name = "sdsdbefore"
-    url = "https://github.com/AChubatova/composite"
-    branch = "refs/heads/master"
-    branchSpec = "+:refs/heads/(*)"
+object Subv : SvnVcsRoot({
+    name = "subv"
+    url = "https://subv.subv"
+    userName = "alskjlk"
+    password = "credentialsJSON:fb43560d-e9e9-4ece-a50d-56d0b4a3c7e1"
 })
