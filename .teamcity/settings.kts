@@ -32,6 +32,7 @@ project {
     vcsRoot(Flower)
     vcsRoot(Sdpasodipoi)
     vcsRoot(Monkey)
+    vcsRoot(Kasdjlkasjd)
     vcsRoot(Lion)
     vcsRoot(Comp)
     vcsRoot(Xcxc)
@@ -102,6 +103,13 @@ object Flower : SvnVcsRoot({
     url = "https://flower.com"
     userName = "abc"
     password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object Kasdjlkasjd : SvnVcsRoot({
+    name = "kasdjlkasjd"
+    url = "https://k.l"
+    userName = "a"
+    password = "credentialsJSON:a353cfd6-0035-4e48-a996-c850fec3a269"
 })
 
 object Lion : SvnVcsRoot({
