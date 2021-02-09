@@ -30,6 +30,10 @@ project {
     vcsRoot(Sdkjs)
     vcsRoot(Dfkj)
     vcsRoot(SAlskd)
+
+    params {
+        param("a", "a")
+    }
 }
 
 object Dfkj : SvnVcsRoot({
