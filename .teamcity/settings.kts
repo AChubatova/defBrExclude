@@ -30,33 +30,37 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Compositep)
+    vcsRoot(Sdsdafjjhkjh)
 
     buildType(Pullreq)
+
+    params {
+        param("a", "a")
+    }
 }
 
 object Pullreq : BuildType({
     name = "pullreq"
 
     vcs {
-        root(Compositep)
+        root(Sdsdafjjhkjh)
     }
 
     features {
         commitStatusPublisher {
-            vcsRootExtId = "${Compositep.id}"
+            vcsRootExtId = "${Sdsdafjjhkjh.id}"
             publisher = github {
                 githubUrl = "https://api.github.com"
                 authType = personalToken {
-                    token = "credentialsJSON:f334b193-a70d-42c1-9b59-2a5c6bf5ff56"
+                    token = "credentialsJSON:8ca59394-44df-4486-b34a-4e9c955a98ff"
                 }
             }
         }
         pullRequests {
-            vcsRootExtId = "${Compositep.id}"
+            vcsRootExtId = "Pullrequest_Sdsdafter"
             provider = github {
                 authType = token {
-                    token = "credentialsJSON:f334b193-a70d-42c1-9b59-2a5c6bf5ff56"
+                    token = "credentialsJSON:8ca59394-44df-4486-b34a-4e9c955a98ff"
                 }
                 filterAuthorRole = PullRequests.GitHubRoleFilter.MEMBER
             }
@@ -64,12 +68,8 @@ object Pullreq : BuildType({
     }
 })
 
-object Compositep : GitVcsRoot({
-    name = "compositepull"
+object Sdsdafjjhkjh : GitVcsRoot({
+    name = "sdsdbefore"
     url = "https://github.com/AChubatova/composite"
     branch = "refs/heads/master"
-    authMethod = password {
-        userName = "AChubatova"
-        password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
-    }
 })
