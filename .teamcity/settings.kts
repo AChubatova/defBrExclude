@@ -1,5 +1,4 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -27,8 +26,6 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Sdkjs)
-
     params {
         param("acc", "ac")
         param("a", "a")
@@ -36,10 +33,3 @@ project {
         param("b", "b")
     }
 }
-
-object Sdkjs : SvnVcsRoot({
-    name = "sdkj"
-    url = "https://sdlk.cn"
-    userName = "sdsd"
-    password = "credentialsJSON:12cacd28-4fa9-4b97-95f7-118018300f73"
-})
