@@ -38,6 +38,7 @@ project {
         param("a", "a")
         password("ac", "credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051")
         param("b", "b")
+        password("ва", "credentialsJSON:eac70b87-f454-49c0-983b-0c32eaf074ee")
     }
 }
 
