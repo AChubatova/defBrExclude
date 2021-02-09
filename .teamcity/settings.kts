@@ -46,7 +46,7 @@ object BrFilter : BuildType({
     vcs {
         root(Sdsdafjjhkjh)
 
-        branchFilter = "+:refs/heads/branch2"
+        branchFilter = "+:branch2"
     }
 })
 
