@@ -35,6 +35,7 @@ project {
     vcsRoot(AslfkjLkjd)
     vcsRoot(Dfdf)
     vcsRoot(Sdsd)
+    vcsRoot(Dsd)
     vcsRoot(Sdsdafjjhkjh)
     vcsRoot(Nastya)
 
@@ -101,6 +102,13 @@ object Dfdf : SvnVcsRoot({
     url = "https://dkj.sk"
     userName = "nastya"
     password = "credentialsJSON:87c43ed5-e4c2-4d81-9d26-a956ead41c97"
+})
+
+object Dsd : SvnVcsRoot({
+    name = "dsd"
+    url = "https://sldk.ck"
+    userName = "s;lakd"
+    password = "credentialsJSON:ca8e5252-ae2a-4b31-871a-895bc4581493"
 })
 
 object Nastya : SvnVcsRoot({
