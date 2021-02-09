@@ -42,6 +42,10 @@ project {
 
 object BrFilter : BuildType({
     name = "brFilter"
+
+    vcs {
+        root(Sdsdafjjhkjh)
+    }
 })
 
 object Pullreq : BuildType({
