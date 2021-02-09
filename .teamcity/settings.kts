@@ -28,23 +28,15 @@ version = "2020.2"
 project {
 
     vcsRoot(Sdkjs)
-    vcsRoot(Dfkj)
     vcsRoot(SAlskd)
 
     params {
         param("acc", "ac")
         param("a", "a")
-        param("b", "b")
         password("ac", "credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051")
+        param("b", "b")
     }
 }
-
-object Dfkj : SvnVcsRoot({
-    name = "dfkjl"
-    url = "https://github.com/AChubatova/defBrExclude"
-    userName = "AChubatova"
-    password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
-})
 
 object SAlskd : SvnVcsRoot({
     name = "s;alskd"
