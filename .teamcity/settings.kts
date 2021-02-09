@@ -27,6 +27,7 @@ version = "2020.2"
 
 project {
 
+    vcsRoot(Sdkjs)
     vcsRoot(Dfkj)
 }
 
@@ -35,4 +36,11 @@ object Dfkj : SvnVcsRoot({
     url = "https://github.com/AChubatova/defBrExclude"
     userName = "AChubatova"
     password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
+})
+
+object Sdkjs : SvnVcsRoot({
+    name = "sdkj"
+    url = "https://sdlk.cn"
+    userName = "sdsd"
+    password = "credentialsJSON:12cacd28-4fa9-4b97-95f7-118018300f73"
 })
