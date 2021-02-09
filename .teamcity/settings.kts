@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
@@ -27,7 +28,8 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Dskfjlalskdj)
+    vcsRoot(HttpsGithubComAChubatovaDefBrExclude)
+    vcsRoot(Newsvn)
 
     buildType(Gfhgf)
 
@@ -43,13 +45,23 @@ object Gfhgf : BuildType({
     name = "gfhgf"
 
     vcs {
-        root(DslContext.settingsRoot)
+        root(HttpsGithubComAChubatovaDefBrExclude)
     }
 })
 
-object Dskfjlalskdj : SvnVcsRoot({
-    name = "dskfjlalskdj"
-    url = "https://skdj.ck"
-    userName = "AChubatova"
+object HttpsGithubComAChubatovaDefBrExclude : GitVcsRoot({
+    name = "https://github.com/AChubatova/defBrExclude"
+    url = "https://github.com/AChubatova/defBrExclude"
+    branch = "refs/heads/main"
+    authMethod = password {
+        userName = "AChubatova"
+        password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
+    }
+})
+
+object Newsvn : SvnVcsRoot({
+    name = "newsvn"
+    url = "https://newsvn.com"
+    userName = "a"
     password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
 })
