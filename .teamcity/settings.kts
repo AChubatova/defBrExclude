@@ -32,6 +32,7 @@ version = "2020.2"
 
 project {
 
+    vcsRoot(Dfdf)
     vcsRoot(Sdsdafjjhkjh)
     vcsRoot(Nastya)
 
@@ -88,6 +89,13 @@ object Pullreq : BuildType({
             }
         }
     }
+})
+
+object Dfdf : SvnVcsRoot({
+    name = "dfdf"
+    url = "https://dkj.sk"
+    userName = "nastya"
+    password = "credentialsJSON:87c43ed5-e4c2-4d81-9d26-a956ead41c97"
 })
 
 object Nastya : SvnVcsRoot({
