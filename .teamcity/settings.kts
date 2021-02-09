@@ -33,11 +33,16 @@ project {
     vcsRoot(Sdsdafjjhkjh)
 
     buildType(Pullreq)
+    buildType(BrFilter)
 
     params {
         param("a", "a")
     }
 }
+
+object BrFilter : BuildType({
+    name = "brFilter"
+})
 
 object Pullreq : BuildType({
     name = "pullreq"
