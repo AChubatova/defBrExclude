@@ -41,6 +41,10 @@ project {
 
 object Gfhgf : BuildType({
     name = "gfhgf"
+
+    vcs {
+        root(DslContext.settingsRoot)
+    }
 })
 
 object Dskfjlalskdj : SvnVcsRoot({
