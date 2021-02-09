@@ -36,6 +36,7 @@ project {
     vcsRoot(Comp)
     vcsRoot(Xcxc)
     vcsRoot(Babushka)
+    vcsRoot(Sdsd)
 
     buildType(FilterOutDefaultBranch)
 
@@ -121,6 +122,16 @@ object Sdpasodipoi : SvnVcsRoot({
     url = "https://doctor.do"
     userName = "doctor"
     password = "credentialsJSON:f8348dfe-6b69-4c9e-8d88-e1707124dd85"
+})
+
+object Sdsd : GitVcsRoot({
+    name = "sdsd"
+    url = "https://git.git"
+    branch = "sldk"
+    authMethod = password {
+        userName = "aas"
+        password = "credentialsJSON:851f7076-b689-4758-ab5b-c213e4409a57"
+    }
 })
 
 object Xcxc : GitVcsRoot({
