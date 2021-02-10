@@ -27,7 +27,7 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(HttpsGithubComAChubatovaDefBrExclude)
+    vcsRoot(Dskfjlalskdj)
 
     buildType(Gfhgf)
 
@@ -44,12 +44,12 @@ object Gfhgf : BuildType({
     name = "gfhgf"
 
     vcs {
-        root(HttpsGithubComAChubatovaDefBrExclude)
+        root(DslContext.settingsRoot)
     }
 })
 
-object HttpsGithubComAChubatovaDefBrExclude : GitVcsRoot({
-    name = "https://github.com/AChubatova/defBrExclude"
+object Dskfjlalskdj : GitVcsRoot({
+    name = "dskfjlalskdj"
     url = "https://github.com/AChubatova/defBrExclude"
     branch = "refs/heads/main"
     authMethod = password {
