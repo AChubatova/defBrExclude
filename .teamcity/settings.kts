@@ -54,7 +54,7 @@ object Adasd : SvnVcsRoot({
     name = "adasd"
     url = "https://sdlk.svn"
     userName = "AChubatova"
-    password = "credentialsJSON:762d7aee-c755-4e95-a901-77e2f0d43642"
+    password = "credentialsJSON:bbe0ebb8-3f1c-4443-b83f-510dd1763dc9"
 })
 
 object Dskfjlalskdj : GitVcsRoot({
