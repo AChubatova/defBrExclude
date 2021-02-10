@@ -1,5 +1,6 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
+import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
 /*
 The settings script is an entry point for defining a TeamCity
@@ -28,6 +29,7 @@ version = "2020.2"
 project {
 
     vcsRoot(Dskfjlalskdj)
+    vcsRoot(Adasd)
 
     buildType(Gfhgf)
 
@@ -46,6 +48,13 @@ object Gfhgf : BuildType({
     vcs {
         root(DslContext.settingsRoot)
     }
+})
+
+object Adasd : SvnVcsRoot({
+    name = "adasd"
+    url = "https://sdlk.svn"
+    userName = "AChubatova"
+    password = "credentialsJSON:762d7aee-c755-4e95-a901-77e2f0d43642"
 })
 
 object Dskfjlalskdj : GitVcsRoot({
