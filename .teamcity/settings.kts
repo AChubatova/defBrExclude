@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
@@ -47,6 +48,15 @@ object Gfhgf : BuildType({
 
     vcs {
         root(DslContext.settingsRoot)
+    }
+
+    triggers {
+        vcs {
+            branchFilter = ""
+            perCheckinTriggering = true
+            groupCheckinsByCommitter = true
+            enableQueueOptimization = false
+        }
     }
 })
 
