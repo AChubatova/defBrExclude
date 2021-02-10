@@ -53,8 +53,6 @@ object Gfhgf : BuildType({
     triggers {
         vcs {
             branchFilter = ""
-            perCheckinTriggering = true
-            groupCheckinsByCommitter = true
             enableQueueOptimization = false
         }
     }
