@@ -9,9 +9,9 @@
         <parameters>
           <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="framework" value="netstandard" />
+          <param name="framework" value="net5.0" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
-          <param name="required.sdk" value="5" />
+          <param name="required.sdk" value="4" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
