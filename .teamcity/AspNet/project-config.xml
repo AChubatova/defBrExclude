@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2020.1/project-config.xsd">
+  <name>asp net</name>
+  <parameters>
+    <param name="a" value="a" />
+    <param name="ac" value="credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051" spec="password" />
+    <param name="acc" value="ac" />
+    <param name="b" value="b" />
+    <param name="nv" value="credentialsJSON:eac70b87-f454-49c0-983b-0c32eaf074ee" spec="password" />
+  </parameters>
+  <project-extensions>
+    <extension id="PROJECT_EXT_1" type="versionedSettings">
+      <parameters>
+        <param name="buildSettings" value="ALWAYS_USE_CURRENT" />
+        <param name="credentialsStorageType" value="credentialsJSON" />
+        <param name="enabled" value="true" />
+        <param name="rootId" value="AspNet_HttpsGithubComAChubatovaComposite" />
+        <param name="showChanges" value="false" />
+      </parameters>
+    </extension>
+  </project-extensions>
+  <cleanup />
+</project>
+

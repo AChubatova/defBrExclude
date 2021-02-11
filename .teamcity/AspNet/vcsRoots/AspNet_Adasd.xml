@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vcs-root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" type="svn" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2020.1/project-config.xsd">
+  <name>adasd</name>
+  <param name="externals-mode" value="externals-none" />
+  <param name="labelingMessage" value="Labeled automatically by TeamCity" />
+  <param name="labelingPatterns" value="trunk=&gt;tags" />
+  <param name="secure:svn-password" value="credentialsJSON:bbe0ebb8-3f1c-4443-b83f-510dd1763dc9" />
+  <param name="svn-config-directory" value="/Users/nastasia.chubatova/.subversion" />
+  <param name="svn-use-default-config-directory" value="true" />
+  <param name="url" value="https://sdlk.svn" />
+  <param name="user" value="AChubatova" />
+  <param name="working-copy-format" value="1.8" />
+</vcs-root>
+
