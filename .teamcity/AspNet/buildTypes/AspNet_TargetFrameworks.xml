@@ -11,7 +11,7 @@
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="framework" value="netcoreapp1.0" />
           <param name="paths" value="Test.TargetFrameworks.sln" />
-          <param name="required.sdk" value="3.1.406" />
+          <param name="required.sdk" value="3.1" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
