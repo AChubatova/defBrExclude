@@ -9,6 +9,7 @@
         <parameters>
           <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
+          <param name="framework" value="netcoreapp1.0" />
           <param name="paths" value="Test.TargetFrameworks.sln" />
           <param name="required.sdk" value="3" />
           <param name="teamcity.step.mode" value="default" />
