@@ -11,7 +11,6 @@
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="nuget.packageSource" value="http://172.27.6.55:8111/httpAuth/app/nuget/feed/NuGet/tcChubatova/v2" />
           <param name="paths" value="c:\teamcity\packages\ContentFilesExample.1.0.4.nupkg" />
-          <param name="required.sdk" value="5" />
           <param name="secure:nuget.apiKey" value="credentialsJSON:ceb303b3-c69e-4135-a452-901709027988" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
