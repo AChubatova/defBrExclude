@@ -7,9 +7,9 @@
     <build-runners>
       <runner id="RUNNER_102" name="" type="dotnet">
         <parameters>
-          <param name="command" value="test" />
+          <param name="args" value="nastya" />
+          <param name="command" value="custom" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="framework" value="net452" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
           <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
