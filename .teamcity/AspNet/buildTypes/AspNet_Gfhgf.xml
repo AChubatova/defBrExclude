@@ -7,9 +7,8 @@
     <build-runners>
       <runner id="RUNNER_102" name="" type="dotnet">
         <parameters>
-          <param name="command" value="msbuild" />
+          <param name="command" value="test" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="msbuild.version" value="MSBuild_16_Windows" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
           <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
