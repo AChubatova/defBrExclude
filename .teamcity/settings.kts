@@ -68,6 +68,7 @@ object FilterOutDefaultBranch : BuildType({
     steps {
         dotnetBuild {
             projects = "PartialTrustExample/PartialTrustExample.csproj"
+            configuration = "m"
             param("dotNetCoverage.dotCover.home.path", "%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%")
         }
     }
