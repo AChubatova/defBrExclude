@@ -1,4 +1,5 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
+import jetbrains.buildServer.configs.kotlin.v2019_2.buildSteps.dotnetRun
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
@@ -62,6 +63,13 @@ object FilterOutDefaultBranch : BuildType({
             -:brch
             -:branch2
         """.trimIndent()
+    }
+
+    steps {
+        dotnetRun {
+            projects = "PartialTrustExample/PartialTrustExample.csproj"
+            param("dotNetCoverage.dotCover.home.path", "%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%")
+        }
     }
 })
 
