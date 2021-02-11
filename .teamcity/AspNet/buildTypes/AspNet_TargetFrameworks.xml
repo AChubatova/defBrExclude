@@ -3,6 +3,9 @@
   <name>targetFrameworks</name>
   <description />
   <settings>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_82" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_82" name="" type="dotnet">
