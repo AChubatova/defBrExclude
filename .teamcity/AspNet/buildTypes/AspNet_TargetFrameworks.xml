@@ -22,6 +22,15 @@
     </vcs-settings>
     <requirements />
     <build-triggers />
+    <build-extensions>
+      <extension id="BUILD_EXT_13" type="jb.nuget.auth">
+        <parameters>
+          <param name="nuget.auth.feed" value="http://172.27.6.55:8111/httpAuth/app/nuget/feed/NuGet/tcChubatova/v3/index.json" />
+          <param name="nuget.auth.username" value="admin" />
+          <param name="secure:nuget.auth.password" value="credentialsJSON:4d85de21-4c34-4888-85d2-fedb2fc55fce" />
+        </parameters>
+      </extension>
+    </build-extensions>
     <cleanup />
   </settings>
 </build-type>
