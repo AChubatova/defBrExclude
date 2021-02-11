@@ -31,6 +31,7 @@ project {
     vcsRoot(Flower)
     vcsRoot(Sdpasodipoi)
     vcsRoot(Monkey)
+    vcsRoot(HttpsGithubComXunitSamplesXunit)
     vcsRoot(Kasdjlkasjd)
     vcsRoot(Lion)
     vcsRoot(Comp)
@@ -53,6 +54,7 @@ object FilterOutDefaultBranch : BuildType({
 
     vcs {
         root(Comp)
+        root(HttpsGithubComXunitSamplesXunit)
 
         branchFilter = """
             +:*
@@ -90,6 +92,12 @@ object Flower : SvnVcsRoot({
     url = "https://flower.com"
     userName = "abc"
     password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object HttpsGithubComXunitSamplesXunit : GitVcsRoot({
+    name = "https://github.com/xunit/samples.xunit"
+    url = "https://github.com/xunit/samples.xunit"
+    branch = "refs/heads/main"
 })
 
 object Kasdjlkasjd : SvnVcsRoot({
