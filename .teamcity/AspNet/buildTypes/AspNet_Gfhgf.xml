@@ -6,7 +6,6 @@
     <parameters />
     <build-runners />
     <vcs-settings>
-      <vcs-entry-ref root-id="AspNet_HttpsGithubComAChubatovaComposite" />
       <vcs-entry-ref root-id="AspNet_HttpsGithubComXunitSamplesXunit" />
     </vcs-settings>
     <requirements />
