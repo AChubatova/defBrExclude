@@ -4,7 +4,7 @@
   <param name="externals-mode" value="externals-none" />
   <param name="labelingMessage" value="Labeled automatically by TeamCity" />
   <param name="labelingPatterns" value="trunk=&gt;tags" />
-  <param name="secure:svn-password" value="credentialsJSON:bbe0ebb8-3f1c-4443-b83f-510dd1763dc9" />
+  <param name="secure:svn-password" value="credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051" />
   <param name="svn-config-directory" value="/Users/nastasia.chubatova/.subversion" />
   <param name="svn-use-default-config-directory" value="true" />
   <param name="url" value="https://sdlk.svn" />
