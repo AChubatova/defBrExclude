@@ -1,5 +1,4 @@
 import jetbrains.buildServer.configs.kotlin.v2019_2.*
-import jetbrains.buildServer.configs.kotlin.v2019_2.triggers.vcs
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.GitVcsRoot
 import jetbrains.buildServer.configs.kotlin.v2019_2.vcs.SvnVcsRoot
 
@@ -29,48 +28,113 @@ version = "2020.2"
 
 project {
 
-    vcsRoot(Dskfjlalskdj)
-    vcsRoot(Adasd)
+    vcsRoot(Flower)
+    vcsRoot(Sdpasodipoi)
+    vcsRoot(Monkey)
+    vcsRoot(Kasdjlkasjd)
+    vcsRoot(Lion)
+    vcsRoot(Comp)
+    vcsRoot(Xcxc)
+    vcsRoot(Babushka)
+    vcsRoot(Sdsd)
 
-    buildType(Gfhgf)
+    buildType(FilterOutDefaultBranch)
 
     params {
-        param("acc", "ac")
-        password("nv", "credentialsJSON:eac70b87-f454-49c0-983b-0c32eaf074ee")
-        param("a", "a")
-        password("ac", "credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051")
-        param("b", "b")
+        password("pwd2", "credentialsJSON:72ae78b7-3767-45b9-a0d8-2ff5ed2bf1f8")
+        password("pwdtiger", "credentialsJSON:fe4ab7ed-0dc4-4bc9-8343-29c5f9e28b29")
+        param("pwd", "pwdpwdpwdp")
+        param("xcxc", "xcxc")
     }
 }
 
-object Gfhgf : BuildType({
-    name = "gfhgf"
+object FilterOutDefaultBranch : BuildType({
+    name = "FilterOutDefaultBranch2"
 
     vcs {
-        root(DslContext.settingsRoot)
-    }
+        root(Comp)
 
-    triggers {
-        vcs {
-            branchFilter = ""
-            enableQueueOptimization = false
-        }
+        branchFilter = """
+            +:*
+            -:<default>
+            -:brch
+            -:branch2
+        """.trimIndent()
     }
 })
 
-object Adasd : SvnVcsRoot({
-    name = "adasd"
-    url = "https://sdlk.svn"
-    userName = "AChubatova"
-    password = "credentialsJSON:bbe0ebb8-3f1c-4443-b83f-510dd1763dc9"
+object Babushka : SvnVcsRoot({
+    name = "babushka"
+    url = "https://sdkj.clk"
+    userName = "asdasd"
+    password = "credentialsJSON:dd2a99dd-56b8-415f-8693-c630ed71b024"
+    passphrase = "credentialsJSON:dd2c9df4-659b-44de-873c-bf0ddd8b1653"
 })
 
-object Dskfjlalskdj : GitVcsRoot({
-    name = "dskfjlalskdj"
-    url = "https://github.com/AChubatova/defBrExclude"
-    branch = "refs/heads/main"
+object Comp : GitVcsRoot({
+    name = "comp"
+    url = "https://github.com/AChubatova/composite"
+    branch = "refs/heads/master"
+    branchSpec = """
+        +:refs/heads/(*)
+        +:mm
+    """.trimIndent()
     authMethod = password {
         userName = "AChubatova"
-        password = "credentialsJSON:95fb58bf-be17-41ba-afbb-32267aad0bea"
+        password = "credentialsJSON:828deb71-9d3e-47a1-a88c-d45d94705a55"
+    }
+})
+
+object Flower : SvnVcsRoot({
+    name = "flower"
+    url = "https://flower.com"
+    userName = "abc"
+    password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object Kasdjlkasjd : SvnVcsRoot({
+    name = "kasdjlkasjd"
+    url = "https://k.l"
+    userName = "a"
+    password = "credentialsJSON:a353cfd6-0035-4e48-a996-c850fec3a269"
+})
+
+object Lion : SvnVcsRoot({
+    name = "lion"
+    url = "https://sdkj.dl"
+    userName = "abc"
+    password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object Monkey : SvnVcsRoot({
+    name = "monkey"
+    url = "https://skdj.bm"
+    password = "credentialsJSON:3695b330-e752-4181-9fea-0f42c109abd3"
+})
+
+object Sdpasodipoi : SvnVcsRoot({
+    name = "sdpasodipoi"
+    url = "https://doctor.do"
+    userName = "doctor"
+    password = "credentialsJSON:f8348dfe-6b69-4c9e-8d88-e1707124dd85"
+})
+
+object Sdsd : GitVcsRoot({
+    name = "sdsd"
+    url = "https://git.git"
+    branch = "sldk"
+    authMethod = password {
+        userName = "aas"
+        password = "credentialsJSON:851f7076-b689-4758-ab5b-c213e4409a57"
+    }
+})
+
+object Xcxc : GitVcsRoot({
+    name = "xcxc"
+    url = "https://gihub.com"
+    branch = "refs/heads/master"
+    authMethod = password {
+        userName = "achubatova"
+        password = "credentialsJSON:82318fd5-6a50-409a-96a8-9cd360ddca82"
     }
 })
