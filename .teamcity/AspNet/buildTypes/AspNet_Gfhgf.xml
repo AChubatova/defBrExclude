@@ -15,6 +15,20 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_104" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="build" />
+          <param name="paths" value="Samples.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_105" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="build" />
+          <param name="paths" value="Devices/UwpTestRunner/project.json" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_HttpsGithubComXunitSamplesXunit" />
