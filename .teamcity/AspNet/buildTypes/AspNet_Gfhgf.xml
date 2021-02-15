@@ -11,12 +11,13 @@
     <build-runners>
       <runner id="RUNNER_102" name="" type="dotnet">
         <parameters>
-          <param name="command" value="msbuild" />
+          <param name="command" value="devenv" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="msbuild.version" value="MSBuild_CrossPlatform" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
           <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="vs.action" value="build" />
+          <param name="vs.version" value="VisualStudio_Windows" />
         </parameters>
       </runner>
       <runner id="RUNNER_105" name="New build step" type="dotnet">
