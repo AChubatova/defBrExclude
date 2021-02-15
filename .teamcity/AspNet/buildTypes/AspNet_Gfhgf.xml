@@ -11,8 +11,9 @@
     <build-runners>
       <runner id="RUNNER_102" name="" type="dotnet">
         <parameters>
-          <param name="command" value="pack" />
+          <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
+          <param name="framework" value="5" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
           <param name="plugin.docker.imageId" value="dotnet" />
           <param name="required.sdk" value="5" />
