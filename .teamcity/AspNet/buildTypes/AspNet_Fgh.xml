@@ -4,18 +4,7 @@
   <description />
   <settings>
     <parameters />
-    <build-runners>
-      <runner id="RUNNER_104" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="framework" value="netstandard1.1" />
-          <param name="paths" value="testsdk.csproj" />
-          <param name="required.sdk" value="3" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-    </build-runners>
+    <build-runners />
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_HttpsGithubComXunitSamplesXunit" />
     </vcs-settings>
