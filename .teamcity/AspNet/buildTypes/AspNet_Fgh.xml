@@ -13,6 +13,7 @@
           <param name="paths" value="d AssertExamples/AssertExamples.csproj DynamicSkipExample/DynamicSkipExample.csproj testsdk.csproj testsdk.csproj" />
           <param name="required.sdk" value="5 3.1.406 4.6 4.6" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="verbosity" value="Diagnostic" />
         </parameters>
       </runner>
     </build-runners>
