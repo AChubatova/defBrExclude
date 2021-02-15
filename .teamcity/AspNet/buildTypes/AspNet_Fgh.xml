@@ -5,17 +5,6 @@
   <settings>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_110" name="" type="dotnet">
-        <parameters>
-          <param name="args" value="-restore -noLogo" />
-          <param name="command" value="msbuild" />
-          <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="msbuild.version" value="MSBuild_CrossPlatform" />
-          <param name="paths" value="testsdk.csproj" />
-          <param name="required.sdk" value="5" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_111" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
