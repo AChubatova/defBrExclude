@@ -9,14 +9,6 @@
     </disabled-settings>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_111" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="paths" value="testsdk.csproj" />
-          <param name="required.sdk" value="4.5.2" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_113" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
