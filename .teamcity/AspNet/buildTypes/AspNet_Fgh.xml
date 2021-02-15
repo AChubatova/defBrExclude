@@ -8,11 +8,12 @@
       <runner id="RUNNER_108" name="" type="dotnet">
         <parameters>
           <param name="args" value="-restore -noLogo" />
-          <param name="command" value="msbuild" />
+          <param name="command" value="nuget-delete" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="msbuild.version" value="MSBuild_CrossPlatform" />
-          <param name="paths" value="testsdk.csproj" />
+          <param name="nuget.packageId" value="1" />
+          <param name="nuget.packageSource" value="1" />
           <param name="required.sdk" value="5;4" />
+          <param name="secure:nuget.apiKey" value="credentialsJSON:e6e1b518-fa68-401a-87da-be635f3d2051" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
