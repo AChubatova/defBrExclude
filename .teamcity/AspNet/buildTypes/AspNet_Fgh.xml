@@ -10,7 +10,8 @@
           <param name="args" value="-restore -noLogo" />
           <param name="command" value="clean" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
+          <param name="framework" value="netstandard2.0" />
+          <param name="paths" value="ClassFixtureExample/ClassFixtureExample.csproj" />
           <param name="teamcity.step.mode" value="default" />
           <param name="verbosity" value="Diagnostic" />
         </parameters>
