@@ -16,7 +16,7 @@
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
           <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="vs.action" value="rebuild" />
+          <param name="vs.action" value="deploy" />
           <param name="vs.version" value="VisualStudio_Windows" />
         </parameters>
       </runner>
