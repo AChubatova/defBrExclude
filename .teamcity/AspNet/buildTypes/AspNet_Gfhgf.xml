@@ -3,6 +3,9 @@
   <name>gfhgf</name>
   <description />
   <settings>
+    <disabled-settings>
+      <setting-ref ref="RUNNER_105" />
+    </disabled-settings>
     <parameters />
     <build-runners>
       <runner id="RUNNER_102" name="" type="dotnet">
