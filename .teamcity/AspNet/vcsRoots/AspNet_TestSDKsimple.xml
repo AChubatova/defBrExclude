@@ -7,7 +7,7 @@
   <param name="branch" value="refs/heads/main" />
   <param name="ignoreKnownHosts" value="true" />
   <param name="submoduleCheckout" value="CHECKOUT" />
-  <param name="url" value="https://github.com/AChubatova/testsdk/tree/main" />
+  <param name="url" value="https://github.com/AChubatova/testsdk" />
   <param name="useAlternates" value="true" />
   <param name="usernameStyle" value="USERID" />
 </vcs-root>
