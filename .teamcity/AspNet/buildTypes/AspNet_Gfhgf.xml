@@ -14,7 +14,6 @@
           <param name="command" value="devenv" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
-          <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
           <param name="vs.action" value="deploy" />
           <param name="vs.version" value="VisualStudio_Windows" />
