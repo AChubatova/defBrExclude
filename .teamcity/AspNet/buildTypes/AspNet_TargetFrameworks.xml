@@ -47,6 +47,7 @@
           <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="paths" value="Devices/UwpTestRunner/UwpTestRunner.csproj" />
+          <param name="required.sdk" value="9" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
