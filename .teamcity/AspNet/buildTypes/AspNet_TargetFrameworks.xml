@@ -7,7 +7,6 @@
       <option name="artifactRules" value="a.txt =&gt; ./" />
     </options>
     <disabled-settings>
-      <setting-ref ref="RUNNER_101" />
       <setting-ref ref="RUNNER_104" />
       <setting-ref ref="RUNNER_108" />
       <setting-ref ref="RUNNER_109" />
@@ -25,13 +24,6 @@
           <param name="paths" value="c:\teamcity\packages\ContentFilesExample.1.0.4.nupkg" />
           <param name="secure:nuget.apiKey" value="credentialsJSON:ceb303b3-c69e-4135-a452-901709027988" />
           <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_101" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="echo %teamcity.nuget.feed.api.key% &gt; a.txt" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
       <runner id="RUNNER_104" name="" type="jb.nuget.installer">
