@@ -39,7 +39,6 @@
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="framework" value="net48" />
           <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
-          <param name="required.sdk" value="4" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
