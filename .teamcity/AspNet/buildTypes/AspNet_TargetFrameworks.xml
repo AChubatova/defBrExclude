@@ -28,6 +28,54 @@
           <param name="use.custom.script" value="true" />
         </parameters>
       </runner>
+      <runner id="RUNNER_104" name="" type="jb.nuget.installer">
+        <parameters>
+          <param name="nuget.path" value="%teamcity.tool.NuGet.CommandLine.DEFAULT%" />
+          <param name="nuget.updatePackages.mode" value="sln" />
+          <param name="nuget.use.restore" value="restore" />
+          <param name="sln.path" value="Test.TargetFrameworks.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_107" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="restore" />
+          <param name="paths" value="Test.TargetFrameworks.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_108" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="build" />
+          <param name="paths" value="Test.TargetFrameworks.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_109" name="" type="dotnet">
+        <parameters>
+          <param name="args" value="-restore -noLogo" />
+          <param name="command" value="msbuild" />
+          <param name="msbuild.version" value="MSBuild_16_Windows_X86" />
+          <param name="paths" value="Test.TargetFrameworks.sln" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_110" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="publish" />
+          <param name="paths" value="Test.NuGet.Standard/Test.NuGet.Standard.csproj" />
+          <param name="required.sdk" value="5" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_111" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="publish" />
+          <param name="paths" value="Test.NuGet.Standard.Net/Test.NuGet.Standard.Net.csproj" />
+          <param name="required.sdk" value="4.6" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_TargetFrameworks" />
