@@ -31,14 +31,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_121" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="paths" value="Devices/UwpTestRunner2/UwpTestRunner2.csproj" />
-          <param name="required.sdk" value="5" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_TargetFrameworks" />
