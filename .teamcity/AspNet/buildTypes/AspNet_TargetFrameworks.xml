@@ -31,13 +31,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_115" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="paths" value="Samples.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_116" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
