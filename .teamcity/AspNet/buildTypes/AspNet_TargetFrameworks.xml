@@ -8,7 +8,6 @@
     </options>
     <disabled-settings>
       <setting-ref ref="RUNNER_104" />
-      <setting-ref ref="RUNNER_111" />
       <setting-ref ref="RUNNER_82" />
     </disabled-settings>
     <parameters />
@@ -29,14 +28,6 @@
           <param name="nuget.updatePackages.mode" value="sln" />
           <param name="nuget.use.restore" value="restore" />
           <param name="sln.path" value="Test.TargetFrameworks.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_111" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="publish" />
-          <param name="paths" value="Test.NuGet.Standard.Net/Test.NuGet.Standard.Net.csproj" />
-          <param name="required.sdk" value="4.6" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
