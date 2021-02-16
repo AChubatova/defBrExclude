@@ -39,6 +39,7 @@
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="nuget.packageId" value="df" />
           <param name="nuget.packageSource" value="f" />
+          <param name="required.sdk" value="4.7.2" />
           <param name="secure:nuget.apiKey" value="credentialsJSON:87e02f76-363a-40a2-9b7e-8ebc49e5824e" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
