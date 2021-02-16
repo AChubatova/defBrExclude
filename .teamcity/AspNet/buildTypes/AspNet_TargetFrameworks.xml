@@ -62,7 +62,9 @@
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_TargetFrameworks" />
     </vcs-settings>
-    <requirements />
+    <requirements>
+      <exists id="RQ_1" name="DotNetCoreSDK3.1.405[\.\d]*_Path" />
+    </requirements>
     <build-triggers />
     <build-extensions>
       <extension id="BUILD_EXT_13" type="jb.nuget.auth">
