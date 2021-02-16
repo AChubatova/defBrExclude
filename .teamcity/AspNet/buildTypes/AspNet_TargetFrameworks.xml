@@ -9,7 +9,6 @@
     <disabled-settings>
       <setting-ref ref="RUNNER_104" />
       <setting-ref ref="RUNNER_108" />
-      <setting-ref ref="RUNNER_109" />
       <setting-ref ref="RUNNER_110" />
       <setting-ref ref="RUNNER_111" />
       <setting-ref ref="RUNNER_82" />
@@ -38,15 +37,6 @@
       <runner id="RUNNER_108" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
-          <param name="paths" value="Test.TargetFrameworks.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_109" name="" type="dotnet">
-        <parameters>
-          <param name="args" value="-restore -noLogo" />
-          <param name="command" value="msbuild" />
-          <param name="msbuild.version" value="MSBuild_16_Windows_X86" />
           <param name="paths" value="Test.TargetFrameworks.sln" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
