@@ -31,13 +31,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_112" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="restore" />
-          <param name="paths" value="Devices/Devices.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_113" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
