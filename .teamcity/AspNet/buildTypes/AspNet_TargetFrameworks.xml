@@ -8,7 +8,6 @@
     </options>
     <disabled-settings>
       <setting-ref ref="RUNNER_104" />
-      <setting-ref ref="RUNNER_108" />
       <setting-ref ref="RUNNER_110" />
       <setting-ref ref="RUNNER_111" />
       <setting-ref ref="RUNNER_82" />
@@ -31,13 +30,6 @@
           <param name="nuget.updatePackages.mode" value="sln" />
           <param name="nuget.use.restore" value="restore" />
           <param name="sln.path" value="Test.TargetFrameworks.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_108" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="paths" value="Test.TargetFrameworks.sln" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
