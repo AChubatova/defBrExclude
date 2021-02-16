@@ -63,7 +63,7 @@
       <vcs-entry-ref root-id="AspNet_TargetFrameworks" />
     </vcs-settings>
     <requirements>
-      <exists id="RQ_1" name="DotNetCoreSDK3.1.406[\.\d]*_Path" />
+      <exists id="RQ_1" name="Exists=&gt;DotNetCoreSDK3.1.406[\.\d]*_Path" />
     </requirements>
     <build-triggers />
     <build-extensions>
