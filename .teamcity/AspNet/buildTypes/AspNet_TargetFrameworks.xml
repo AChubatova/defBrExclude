@@ -35,14 +35,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_107" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="restore" />
-          <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="paths" value="Test.TargetFrameworks.sln" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_108" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
