@@ -14,6 +14,7 @@
       <setting-ref ref="RUNNER_82" />
     </disabled-settings>
     <parameters>
+      <param name="reqSQK" value="4" />
       <param name="targetF" value="3.1" />
     </parameters>
     <build-runners>
