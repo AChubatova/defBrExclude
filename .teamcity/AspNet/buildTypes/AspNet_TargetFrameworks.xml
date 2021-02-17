@@ -13,7 +13,7 @@
       <setting-ref ref="RUNNER_82" />
     </disabled-settings>
     <parameters>
-      <param name="targetF" value="31" />
+      <param name="targetF" value="3.1" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_82" name="" type="dotnet">
