@@ -3,6 +3,9 @@
   <name>tetsdsk</name>
   <description />
   <settings>
+    <options>
+      <option name="buildNumberPattern" value="test.mybuild.hellofrombuild.%build.counter%" />
+    </options>
     <parameters />
     <build-runners />
     <vcs-settings>
