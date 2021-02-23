@@ -84,7 +84,6 @@
         <parameters>
           <param name="includedAssemblies"><![CDATA[TestOutputExample\bin\Debug\net452\TestOutputExample.dll
 TestOutputExample2\bin\Debug\net452\TestOutputExample2.dll]]></param>
-          <param name="numberOfParallelProcesses" value="2" />
           <param name="runnerPlatform" value="AnyCPU/MSIL" />
           <param name="runnerRuntimeVersion" value=".NET 4.5" />
           <param name="teamcity.step.mode" value="default" />
