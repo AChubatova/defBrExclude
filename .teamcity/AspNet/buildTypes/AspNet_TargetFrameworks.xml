@@ -79,7 +79,7 @@
       </runner>
       <runner id="RUNNER_112" name="xunit" type="xUnitRunner">
         <parameters>
-          <param name="includedAssemblies" value="TestOutputExample\TestOutputExample.dll" />
+          <param name="includedAssemblies" value="TestOutputExample\bin\Debug\net452\TestOutputExample.dll" />
           <param name="runnerPlatform" value="AnyCPU/MSIL" />
           <param name="runnerRuntimeVersion" value=".NET 4.5" />
           <param name="teamcity.step.mode" value="default" />
