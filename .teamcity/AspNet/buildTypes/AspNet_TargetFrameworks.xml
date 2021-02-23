@@ -69,6 +69,15 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_112" name="xunit" type="xUnitRunner">
+        <parameters>
+          <param name="includedAssemblies" value="k" />
+          <param name="runnerPlatform" value="AnyCPU/MSIL" />
+          <param name="runnerRuntimeVersion" value=".NET 4.5" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="xUnitVersion" value="2.1.0" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_TargetFrameworks" />
