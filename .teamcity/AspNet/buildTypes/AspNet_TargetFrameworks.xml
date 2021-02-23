@@ -72,7 +72,6 @@
         <parameters>
           <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="outputDir" value="./" />
           <param name="paths" value="TestOutputExample/TestOutputExample.csproj" />
           <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
