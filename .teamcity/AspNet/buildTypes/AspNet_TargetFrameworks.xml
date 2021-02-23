@@ -16,6 +16,7 @@
     <parameters>
       <param name="reqSQK" value="4" />
       <param name="targetF" value="3.1" />
+      <param name="teamcity.build.serviceMessages.logOriginal" value="true" />
     </parameters>
     <build-runners>
       <runner id="RUNNER_82" name="" type="dotnet">
