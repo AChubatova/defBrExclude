@@ -61,6 +61,13 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
+      <runner id="RUNNER_114" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="del TestOutputExample.dll" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
       <runner id="RUNNER_110" name="" type="dotnet">
         <parameters>
           <param name="command" value="build" />
@@ -83,13 +90,6 @@
       <runner id="RUNNER_113" name="" type="simpleRunner">
         <parameters>
           <param name="script.content" value="dir" />
-          <param name="teamcity.step.mode" value="default" />
-          <param name="use.custom.script" value="true" />
-        </parameters>
-      </runner>
-      <runner id="RUNNER_114" name="" type="simpleRunner">
-        <parameters>
-          <param name="script.content" value="del TestOutputExample.dll" />
           <param name="teamcity.step.mode" value="default" />
           <param name="use.custom.script" value="true" />
         </parameters>
