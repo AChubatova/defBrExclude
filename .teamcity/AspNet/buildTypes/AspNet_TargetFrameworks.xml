@@ -76,7 +76,7 @@
           <param name="runnerPlatform" value="AnyCPU/MSIL" />
           <param name="runnerRuntimeVersion" value=".NET 4.5" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="xUnitVersion" value="2.1.0" />
+          <param name="xUnitVersion" value="2.4.x" />
         </parameters>
       </runner>
     </build-runners>
