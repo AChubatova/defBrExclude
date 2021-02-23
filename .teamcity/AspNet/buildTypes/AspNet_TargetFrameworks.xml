@@ -80,6 +80,13 @@
           <param name="xUnitVersion" value="2.4.x" />
         </parameters>
       </runner>
+      <runner id="RUNNER_113" name="" type="simpleRunner">
+        <parameters>
+          <param name="script.content" value="ls" />
+          <param name="teamcity.step.mode" value="default" />
+          <param name="use.custom.script" value="true" />
+        </parameters>
+      </runner>
     </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_TargetFrameworks" />
