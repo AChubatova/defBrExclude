@@ -39,11 +39,9 @@
       </runner>
       <runner id="RUNNER_122" name="" type="dotnet">
         <parameters>
-          <param name="command" value="build" />
+          <param name="command" value="custom" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="framework" value="net48" />
-          <param name="paths" value="PartialTrustExample/PartialTrustExample.csproj" />
-          <param name="required.sdk" value="5 5.0 5.0.103 3 3.1.406 4.8 4.5.2" />
+          <param name="paths" value="xunit.console.exe PartialTrustExample/PartialTrustExample.csproj" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
