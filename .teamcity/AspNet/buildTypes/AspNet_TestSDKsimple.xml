@@ -7,11 +7,11 @@
     <build-runners>
       <runner id="RUNNER_118" name="" type="dotnet">
         <parameters>
-          <param name="command" value="build" />
+          <param name="command" value="run" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="framework" value="netcoreapp3.0" />
           <param name="paths" value="TestOutputExample/TestOutputExample.csproj" />
-          <param name="required.sdk" value="5" />
+          <param name="required.sdk" value="3" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
