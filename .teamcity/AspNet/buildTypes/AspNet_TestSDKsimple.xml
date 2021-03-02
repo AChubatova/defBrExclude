@@ -17,9 +17,16 @@
       <runner id="RUNNER_125" name="" type="python-runner">
         <parameters>
           <param name="command" value="file" />
+          <param name="coverageArgs" value="--omit=*lib*" />
+          <param name="envTool" value="none" />
+          <param name="installToolPackage" value="false" />
+          <param name="isCoverageEnabled" value="false" />
+          <param name="isTestReportingEnabled" value="true" />
           <param name="pythonVersion" value="python3" />
           <param name="scriptFile" value="1.py" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="virtualenvEnvName" value=".venv" />
+          <param name="virtualenvFile" value="requirements.txt" />
         </parameters>
       </runner>
     </build-runners>
