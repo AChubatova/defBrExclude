@@ -18,7 +18,7 @@
         <parameters>
           <param name="command" value="file" />
           <param name="coverageArgs" value="--omit=*lib*" />
-          <param name="envTool" value="pipenv" />
+          <param name="envTool" value="none" />
           <param name="installToolPackage" value="false" />
           <param name="isCoverageEnabled" value="false" />
           <param name="isTestReportingEnabled" value="true" />
