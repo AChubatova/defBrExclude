@@ -15,14 +15,6 @@
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
-      <runner id="RUNNER_126" name="" type="python-runner">
-        <parameters>
-          <param name="command" value="file" />
-          <param name="pythonVersion" value="python3" />
-          <param name="scriptFile" value="1.py" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_131" name="" type="dotnet">
         <parameters>
           <param name="args" value="-restore -noLogo" />
