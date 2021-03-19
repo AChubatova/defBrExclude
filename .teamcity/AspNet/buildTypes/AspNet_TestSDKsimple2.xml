@@ -22,7 +22,6 @@
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="msbuild.version" value="MSBuild_CrossPlatform" />
           <param name="paths" value="Devices/Devices.sln" />
-          <param name="required.sdk" value="4.8 5" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
