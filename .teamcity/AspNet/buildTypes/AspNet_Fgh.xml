@@ -7,7 +7,41 @@
       <option name="buildNumberPattern" value="test.mybuild.hellofrombuild.%build.counter%" />
     </options>
     <parameters />
-    <build-runners />
+    <build-runners>
+      <runner id="RUNNER_126" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="build" />
+          <param name="paths" value="Devices/Devices.sln" />
+          <param name="required.sdk" value="4.8 5" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_132" name="" type="dotnet">
+        <parameters>
+          <param name="args" value="-restore -noLogo" />
+          <param name="command" value="msbuild" />
+          <param name="msbuild.version" value="MSBuild_16_Windows_X86" />
+          <param name="paths" value="Devices/Devices.sln" />
+          <param name="required.sdk" value="4.8 5" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_133" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="build" />
+          <param name="paths" value="Devices/UwpTestRunner/project.json" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+      <runner id="RUNNER_134" name="" type="dotnet">
+        <parameters>
+          <param name="command" value="build" />
+          <param name="paths" value="TestOutputExample2/TestOutputExample2.csproj" />
+          <param name="required.sdk" value="4.5.2" />
+          <param name="teamcity.step.mode" value="default" />
+        </parameters>
+      </runner>
+    </build-runners>
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_HttpsGithubComAChubatovaTestsdk" />
     </vcs-settings>
