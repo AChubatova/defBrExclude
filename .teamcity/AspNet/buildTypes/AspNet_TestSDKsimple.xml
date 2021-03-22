@@ -7,10 +7,13 @@
     <build-runners>
       <runner id="RUNNER_118" name="" type="dotnet">
         <parameters>
-          <param name="command" value="clean" />
+          <param name="command" value="devenv" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="required.sdk" value="7" />
+          <param name="paths" value="AssertExamples/AssertExamples.csproj" />
+          <param name="required.sdk" value="6" />
           <param name="teamcity.step.mode" value="default" />
+          <param name="vs.action" value="build" />
+          <param name="vs.version" value="VisualStudio_Windows" />
         </parameters>
       </runner>
     </build-runners>
