@@ -7,16 +7,7 @@
       <option name="buildNumberPattern" value="test.mybuild.hellofrombuild.%build.counter%" />
     </options>
     <parameters />
-    <build-runners>
-      <runner id="RUNNER_137" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="paths" value="testsdk.csproj" />
-          <param name="required.sdk" value="4.0 4.5" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
-    </build-runners>
+    <build-runners />
     <vcs-settings>
       <vcs-entry-ref root-id="AspNet_HttpsGithubComAChubatovaTestsdk" />
     </vcs-settings>
