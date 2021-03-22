@@ -7,12 +7,10 @@
     <build-runners>
       <runner id="RUNNER_118" name="" type="dotnet">
         <parameters>
-          <param name="command" value="nuget-push" />
+          <param name="command" value="publish" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="nuget.packageSource" value="dfsd" />
           <param name="paths" value="AssertExamples/AssertExamples.csproj" />
           <param name="required.sdk" value="6" />
-          <param name="secure:nuget.apiKey" value="credentialsJSON:ab395b24-ec5a-4d51-ae04-4ee3d2e73ee5" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
