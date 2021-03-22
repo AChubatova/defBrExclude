@@ -7,11 +7,9 @@
     <build-runners>
       <runner id="RUNNER_118" name="" type="dotnet">
         <parameters>
-          <param name="args" value="dotnet clean build" />
+          <param name="args" value="clean build AssertExamples/AssertExamples.csproj" />
           <param name="command" value="custom" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="paths" value="AssertExamples/AssertExamples.csproj" />
-          <param name="required.sdk" value="3" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
