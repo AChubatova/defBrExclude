@@ -8,14 +8,6 @@
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_126" name="" type="dotnet">
-        <parameters>
-          <param name="command" value="build" />
-          <param name="paths" value="Devices/Devices.sln" />
-          <param name="required.sdk" value="4.8 5" />
-          <param name="teamcity.step.mode" value="default" />
-        </parameters>
-      </runner>
       <runner id="RUNNER_132" name="" type="dotnet">
         <parameters>
           <param name="args" value="-restore -noLogo" />
