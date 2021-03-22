@@ -18,7 +18,7 @@
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="AspNet_HttpsGithubComXunitSamplesXunit" />
+      <vcs-entry-ref root-id="AspNet_HttpsGithubComAChubatovaTestsdk" />
     </vcs-settings>
     <requirements />
     <build-triggers />
