@@ -9,7 +9,7 @@
         <parameters>
           <param name="command" value="custom" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="paths" value="dotnet ef database update" />
+          <param name="paths" value="dotnet -h" />
           <param name="required.sdk" value="3" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
