@@ -7,13 +7,10 @@
     <build-runners>
       <runner id="RUNNER_118" name="" type="dotnet">
         <parameters>
-          <param name="command" value="vstest" />
+          <param name="command" value="clean" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="paths" value="TestOutputExample/TestOutputExample.csproj" />
-          <param name="platform" value="auto" />
           <param name="required.sdk" value="7" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="vstest.version" value="VSTest_CrossPlatform" />
         </parameters>
       </runner>
     </build-runners>
