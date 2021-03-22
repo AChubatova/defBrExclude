@@ -12,7 +12,7 @@
           <param name="paths" value="AssertExamples/AssertExamples.csproj" />
           <param name="required.sdk" value="6" />
           <param name="teamcity.step.mode" value="default" />
-          <param name="vs.action" value="build" />
+          <param name="vs.action" value="clean" />
           <param name="vs.version" value="VisualStudio_Windows" />
         </parameters>
       </runner>
