@@ -10,7 +10,6 @@
           <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
           <param name="paths" value="testsdk.csproj" />
-          <param name="plugin.docker.imageId" value="asdkj" />
           <param name="plugin.docker.imagePlatform" value="linux" />
           <param name="required.sdk" value="4.0 3.1" />
           <param name="teamcity.step.mode" value="default" />
