@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="105f170b-5506-4f6a-af6a-d31f9b3b2fcd" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2020.1/project-config.xsd">
+<build-type xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" uuid="105f170b-5506-4f6a-af6a-d31f9b3b2fcd" xsi:noNamespaceSchemaLocation="https://www.jetbrains.com/teamcity/schemas/2021.1/project-config.xsd">
   <name>tetsdsk</name>
   <description />
   <settings>
@@ -8,20 +8,17 @@
     </options>
     <parameters />
     <build-runners>
-      <runner id="RUNNER_137" name="" type="dotnet">
+      <runner id="RUNNER_117" name="" type="dotnet">
         <parameters>
-          <param name="args" value="-restore -noLogo" />
-          <param name="command" value="msbuild" />
+          <param name="command" value="build" />
           <param name="dotNetCoverage.dotCover.home.path" value="%teamcity.tool.JetBrains.dotCover.CommandLineTools.DEFAULT%" />
-          <param name="msbuild.version" value="MSBuild_16_Windows" />
-          <param name="paths" value="testsdk.csproj" />
-          <param name="required.sdk" value="3.5" />
+          <param name="required.sdk" value="5" />
           <param name="teamcity.step.mode" value="default" />
         </parameters>
       </runner>
     </build-runners>
     <vcs-settings>
-      <vcs-entry-ref root-id="AspNet_HttpsGithubComAChubatovaTestsdk" />
+      <vcs-entry-ref root-id="AspNet_HttpsGithubComXunitSamplesXunit" />
     </vcs-settings>
     <requirements />
     <build-triggers />
